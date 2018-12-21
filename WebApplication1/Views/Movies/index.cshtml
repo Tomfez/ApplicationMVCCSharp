@@ -1,0 +1,15 @@
+﻿@using DataModel.Entities;
+@model List<Movie>
+
+@{
+    ViewBag.Title = "Liste de films";
+}
+
+<h2>Ma liste de films</h2>
+
+@foreach (Movie movie in Model)
+{
+    <h3>@movie.Title</h3>
+    <p>@movie.Description</p>
+    <hr />
+}

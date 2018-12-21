@@ -127,6 +127,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MoviesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -168,6 +169,7 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Movies\index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -185,6 +187,20 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\AppliWeb\DataModel\DataModel.csproj">
+      <Project>{7E86DF2C-11C9-47F2-9D9D-E86B52944E43}</Project>
+      <Name>DataModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\AppliWeb\Repositories\Repositories.csproj">
+      <Project>{F77287A0-F79D-47EC-987D-EAAC402880EE}</Project>
+      <Name>Repositories</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\AppliWeb\Services\Services.csproj">
+      <Project>{8866657A-8316-459D-9DEA-D89B4A9339B3}</Project>
+      <Name>Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
